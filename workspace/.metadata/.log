@@ -419,3 +419,131 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
 	... 9 more
+
+!ENTRY org.eclipse.jface.text 2 0 2021-05-06 14:37:03.502
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-05-06 14:44:56.455
+!MESSAGE No repository found at https://dl.bintray.com/pmd/pmd-eclipse-plugin/updates.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-05-06 14:45:02.373
+!MESSAGE No repository found at http://rgladwell.github.com/m2e-android/updates/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2021-05-06 14:45:10.082
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://dist.springframework.org/release/IDE/3.9.15.RELEASE/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:165)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:121)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at sun.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2021-05-06 14:45:10.082
+!MESSAGE No repository found at https://dist.springframework.org/release/IDE/3.9.15.RELEASE/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-05-06 14:45:22.562
+!MESSAGE No repository found at http://dl.bintray.com/harawata/eclipse.
+
+!ENTRY org.eclipse.jface.text 2 0 2021-05-06 14:54:15.238
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-06 14:54:16.415
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:453)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:255)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:232)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:303)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:168)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:48)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:364)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:76)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:590)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:258)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:529)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:430)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-05-06 14:54:16.415
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2021-05-06 15:17:27.986
+!MESSAGE Full project indexing required:
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\charsets.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\access-bridge-64.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\cldrdata.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\dnsns.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\jaccess.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\jfxrt.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\localedata.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\nashorn.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\sunec.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\sunjce_provider.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\sunmscapi.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\sunpkcs11.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\ext\zipfs.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\jce.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\jfr.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\jsse.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\resources.jar
+  [+] D:\B_Util\2.Java\JDK1.8\jre\lib\rt.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\annotations-api.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\catalina-ant.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\catalina-ha.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\catalina-tribes.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\catalina.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\ecj-4.4.2.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\el-api.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\jasper-el.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\jasper.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\jsp-api.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\servlet-api.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\tomcat-api.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\tomcat-coyote.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\tomcat-dbcp.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\tomcat-i18n-es.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\tomcat-i18n-fr.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\tomcat-i18n-ja.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\tomcat-jdbc.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\tomcat-util.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\tomcat7-websocket.jar
+  [+] D:\B_Util\5.ApacheTomcat\apache-tomcat-7.0.73\lib\websocket-api.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
