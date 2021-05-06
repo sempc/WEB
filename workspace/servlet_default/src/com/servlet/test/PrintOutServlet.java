@@ -26,7 +26,7 @@ public class PrintOutServlet extends HttpServlet {
 		String message = request.getParameter("message");
 		
 		
-		
+		// service.getMember
 		
 		
 		response.setContentType("text/html;charset=utf-8");
