@@ -21,15 +21,29 @@ public class PrintOutServlet extends HttpServlet {
 		
 		//Scanner scan = new Scanner(System.in);
 		
+		String bg=request.getParameter("bg");
+		String color=request.getParameter("color");
 		String message = request.getParameter("message");
 		
-		response.setContentType("text/html;charset=utf-8");
 		
+		
+		
+		
+		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
+		
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<title>연습</title>");
 		out.println("<style>");
-		out.println("body {background:"++"}")
+		out.println("body {background:"+bg+"}");
+		out.println("body {color:"+color+"}");
 		out.println("</style>");
+		out.println("</head>");
+		out.println("<body>");
 		out.printf("<h1>%s</h1>",message);
+		out.println("</body>");
+		out.println("</html>");
 	}
 
 }
